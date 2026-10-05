@@ -64,37 +64,12 @@
             <TextBlock x:Name="noResultsTextBlock"
                        Style="{StaticResource TitleTextBlockStyle}"
                        HorizontalAlignment="Center" />
-            
+
             <TextBlock Style="{StaticResource BodyTextBlockStyle}"
                        Text="Try a different search term or browse the samples below."
                        HorizontalAlignment="Center"
                        TextWrapping="Wrap"
                        MaxWidth="500" />
-
-            <InfoBar Title="Search tips"
-                     IsOpen="True"
-                     IsClosable="False"
-                     MaxWidth="500"
-                     Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}">
-                <InfoBar.IconSource>
-                    <FontIconSource Glyph="&#xEA80;" />
-                </InfoBar.IconSource>
-
-                <InfoBar.Content>
-                    <RichTextBlock Margin="0,-16,16,16"
-                                   Foreground="{ThemeResource TextFillColorPrimaryBrush}">
-                        <Paragraph>
-                            • Search by sample name, for example, Button.
-                        </Paragraph>
-                        <Paragraph>
-                            • Search by concept, for example, Data binding.
-                        </Paragraph>
-                        <Paragraph>
-                            • Search by keyword, for example, Animation.
-                        </Paragraph>
-                    </RichTextBlock>
-                </InfoBar.Content>
-            </InfoBar>
 
             <Button x:Name="AllSamplesButton"
                     Margin="0,12,0,0"
